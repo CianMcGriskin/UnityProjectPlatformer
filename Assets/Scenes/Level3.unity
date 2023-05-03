@@ -964,6 +964,7 @@ GameObject:
   - component: {fileID: 1185501792}
   - component: {fileID: 1185501791}
   - component: {fileID: 1185501793}
+  - component: {fileID: 1185501794}
   m_Layer: 0
   m_Name: HempPortal
   m_TagString: Untagged
@@ -1064,6 +1065,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.32461, y: 8.64337}
   m_EdgeRadius: 0
+--- !u!114 &1185501794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185501790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0aed738b0b4c3c4586f543fbefea16b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1232487718
 GameObject:
   m_ObjectHideFlags: 0
@@ -30807,7 +30820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -439.94, y: 225.2}
+  m_AnchoredPosition: {x: -300.2, y: 146.5}
   m_SizeDelta: {x: 146.51, y: 25.342}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661266660
@@ -42354,12 +42367,12 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  hempSmokeSprite: {fileID: 1185501790}
   initialSize: 1
   maxHealth: 100
   currentHealth: 0
   respawnPosition: {x: -5.470581, y: 0.4861145}
   plantsNeededToShowSprite: 3
-  hempSmokeSprite: {fileID: 1185501790}
 --- !u!1 &2117186521
 GameObject:
   m_ObjectHideFlags: 0
@@ -42408,7 +42421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

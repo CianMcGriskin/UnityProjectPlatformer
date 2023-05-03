@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float moveSpeed = 5f;
     [SerializeField] public float jumpSpeed = 15f;
     [SerializeField] private LayerMask jumpableGround;
+    public GameObject hempSmokeSprite;
     public float initialSize = 1f;
 
     public int maxHealth = 100;
@@ -95,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
     private int plants = 0;
     public int plantsNeededToShowSprite = 3;
-    public GameObject hempSmokeSprite;
+    
     void OnTriggerEnter2D(Collider2D collisionObject)
     {
         if (collisionObject.gameObject.CompareTag("Collectable"))
@@ -114,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
             
             if(collisionObject.gameObject.name == "BadPlant")
             {
+                Debug.Log("test");
                 Shrink(0.3f);
                 jumpSpeed = 6f;
             }
@@ -121,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
             if(collisionObject.gameObject.name == "RegrowPlant")
             {
                 RestoreSize();
-                jumpSpeed = 13f;
+                jumpSpeed = 14f;
             }
 
             if(collisionObject.gameObject.name == "JumpPlant")

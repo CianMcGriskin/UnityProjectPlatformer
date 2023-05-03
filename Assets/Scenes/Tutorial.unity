@@ -639,6 +639,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703722838}
   m_CullTransparentMesh: 1
+--- !u!1 &754534831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5541382934044276438, guid: 7a3482133d98cd84a97c9301cfbec8f1, type: 3}
+  m_PrefabInstance: {fileID: 119316734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &844764186
 GameObject:
   m_ObjectHideFlags: 0
@@ -40409,6 +40414,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4276775130657076158, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
   m_PrefabInstance: {fileID: 4276775129100602364}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &2102294597 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4276775130657076153, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+  m_PrefabInstance: {fileID: 4276775129100602364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117186521
 GameObject:
   m_ObjectHideFlags: 0
@@ -40643,16 +40653,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 2102294597}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 1661266660}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: jumpSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
       propertyPath: plantsText
       value: 
       objectReference: {fileID: 2039217261}
     - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
       propertyPath: hempSmokeSprite
       value: 
+      objectReference: {fileID: 754534831}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: respawnPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: respawnPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276775130657076154, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
+      propertyPath: jumpableGround.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa3d653337a09044a55d8c058f45f79, type: 3}
